@@ -17,50 +17,95 @@ table {
 
 
 
-.parte-fixa {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #1d0844;
-	    font-family: georgia;
-	    font-size: large;
-            color: white;
-            padding: 10px;
-            border-bottom: 5px solid #000000;
-            text-align: center;
-            z-index: 1000; /* Garante que fique acima de outros elementos */
-	    transition: color 0.3s ease;
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "Inter", sans-serif;
         }
-
-.parte-fixa:hover {
-		color:yellow;
-	}
-
-.parte-fixa h1 {
-	  font-style:bold;
-	  text-decoration: underline;
-	  align: center;
-	}
-
-.parte-fixa button { 
-	  padding: 5px 10px;
-	  border: 5px solid black;
-	  border-radius: 7px;
+        header{
+            background-color:#1d0844;
+            box-shadow: 0px 3px 10px rgb(0, 0, 0);
+            border-bottom: 6px solid #000000
+        }
+        
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem 6rem;
+        }
+        
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+        .logo h1{
+            color: #fff;
+        }
+        .nav-list{
+            display: flex;
+            align-items: center;
+        
+        }
+        .nav-list ul{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        .nav-item{
+            margin-right: 20px; /* Adiciona margem direita maior aos botões */
+                    padding: 5px 10px; /* Adiciona preenchimento interno aos botões */
+                    background-color: #6b25ee /* Cor de fundo dos botões */
+                    color: #000000; /* Cor do texto dos botões */
+                    cursor: pointer; /* Altera o cursor ao passar sobre os botões */
+                    border-radius: 5px; /* Borda arredondada nos botões */
+        }
+        
+        .nav-link{
+            text-decoration: none;
+            font-size: 1.15rem;
+            color: #ffffff;
+            font-weight: 400;
+        }
+        
+        .mobile-menu-icon{
+            display: none;
+        }
+        
+        .mobile-menu{
+        display: none;
+        }
+        @media screen and (max-width: 730px){
+            .nav-bar{
+                padding: 1.5rem 4rem;
+            }
+            .nav-item{
+                display: none;
+            }
+            .mobile-menu-icon{
+                display: block;
+            }
+            .mobile-menu-icon button{
+        
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+            .mobile-menu ul{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+            .mobile-menu .nav-item{
+                display: block;
+                padding-top: 1.2rem;
+            }
+            .open {
+                display: block;
+            }
+                
             
-        }
-
-.parte-fixa a {
-	color: black;
-	text-decoration: none;
-	fonte-weight: bold;
-	font-size: large;
-	padding: 5px 10px;
-	}
-
-.parte-fixa a:hover {
-	color: blue;
-	}
+        } 
 
 
 .container {
@@ -69,11 +114,3 @@ table {
             text-align: justify; /* Justifica o texto 
 	}
 
-.imagem {
-	   vertical-align: middle;
-	}
-
-
-
-	  
-	
