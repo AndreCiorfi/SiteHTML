@@ -5,8 +5,9 @@
     font-family: "Inter", sans-serif;
 }
 header{
-    background-color:aquamarine;
-    box-shadow: 0px 3px 10px whitesmoke;
+    background-color:#1d0844;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0);
+    border-bottom: 6px solid #000000
 }
 
 .nav-bar {
@@ -33,13 +34,18 @@ header{
     list-style: none;
 }
 .nav-item{
-    margin: 0px 15px;
+    margin-right: 20px; /* Adiciona margem direita maior aos botões */
+            padding: 5px 10px; /* Adiciona preenchimento interno aos botões */
+            background-color: #6b25ee /* Cor de fundo dos botões */
+            color: #000000; /* Cor do texto dos botões */
+            cursor: pointer; /* Altera o cursor ao passar sobre os botões */
+            border-radius: 5px; /* Borda arredondada nos botões */
 }
 
 .nav-link{
     text-decoration: none;
     font-size: 1.15rem;
-    color: #fff;
+    color: #ffffff;
     font-weight: 400;
 }
 
@@ -76,7 +82,9 @@ display: none;
         display: block;
         padding-top: 1.2rem;
     }
-    
+    .open {
+        display: block;
+    }
         
     
 } 
