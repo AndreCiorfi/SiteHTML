@@ -59,12 +59,36 @@ table {
                     cursor: pointer; /* Altera o cursor ao passar sobre os botões */
                     border-radius: 5px; /* Borda arredondada nos botões */
         }
+        .dropdown{
+            margin-right: 20px; /* Adiciona margem direita maior aos botões */
+                    padding: 5px 10px; /* Adiciona preenchimento interno aos botões */
+                    background-color: #6b25ee /* Cor de fundo dos botões */
+                    color: #000000; /* Cor do texto dos botões */
+                    cursor: pointer; /* Altera o cursor ao passar sobre os botões */
+                    border-radius: 5px; /* Borda arredondada nos botões */
+        }
+        .dropdown-menu{
+            position: absolute;
+            box-shadow: 0 0 2px #1d0844;
+            background-color: #1d0844;
+            display: none;
+        }
+        .dropdown-menu a{
+            display: block;
+
+        }
+        .dropdown:hover .dropdown-menu{
+            display: block;
+        }
         
         .nav-link{
             text-decoration: none;
             font-size: 1.15rem;
             color: #ffffff;
             font-weight: 400;
+        }
+        .nav-link:hover{
+            background-color: #6b25ee;
         }
         
         .mobile-menu-icon{
