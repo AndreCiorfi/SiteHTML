@@ -1,0 +1,175 @@
+body {
+            background-color: rgba(181, 148, 241, 0.719); /* Define a cor de fundo para lightblue */
+            text-align: center; /* Centraliza o texto na página */
+        }
+
+
+table {
+            border-collapse: collapse; /* Combina as bordas das células para uma aparência mais limpa */
+            width: 100%; /* Define a largura da tabela como 100% da largura da página */
+        }
+
+ th, td {
+            border: 3px solid rgb(53, 52, 52); /* Define a espessura e o estilo das bordas das células */
+            padding: 3px; /* Adiciona um preenchimento interno de 8px em todas as células */
+            text-align: left; /* Alinha o texto à esquerda dentro das células */
+        }
+
+
+
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "Inter", sans-serif;
+        }
+        header{
+            background-color:#1d0844;
+            box-shadow: 0px 3px 10px rgb(0, 0, 0);
+            border-bottom: 6px solid #000000
+        }
+        
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem 6rem;
+        }
+        
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+        .logo h1{
+            color: #fff;
+        }
+        .nav-list{
+            display: flex;
+            align-items: center;
+        
+        }
+        .nav-list ul{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        .nav-item{
+            margin-right: 20px; /* Adiciona margem direita maior aos botões */
+                    padding: 5px 10px; /* Adiciona preenchimento interno aos botões */
+                    background-color: #6b25ee /* Cor de fundo dos botões */
+                    color: #000000; /* Cor do texto dos botões */
+                    cursor: pointer; /* Altera o cursor ao passar sobre os botões */
+                    border-radius: 5px; /* Borda arredondada nos botões */
+        }
+        .dropdown{
+            margin-right: 20px; /* Adiciona margem direita maior aos botões */
+                    padding: 5px 10px; /* Adiciona preenchimento interno aos botões */
+                    background-color: #6b25ee /* Cor de fundo dos botões */
+                    color: #000000; /* Cor do texto dos botões */
+                    cursor: pointer; /* Altera o cursor ao passar sobre os botões */
+                    border-radius: 5px; /* Borda arredondada nos botões */
+        }
+        .dropdown-menu{
+            position: absolute;
+            box-shadow: 0 0 2px #1d0844;
+            background-color: #1d0844;
+            display: none;
+        }
+        .dropdown-menu a{
+            display: block;
+
+        }
+        .dropdown:hover .dropdown-menu{
+            display: block;
+        }
+        
+        .nav-link{
+            text-decoration: none;
+            font-size: 1.15rem;
+            color: #ffffff;
+            font-weight: 400;
+        }
+        .nav-link:hover{
+            background-color: #6b25ee;
+        }
+        
+        .mobile-menu-icon{
+            display: none;
+        }
+        
+        .mobile-menu{
+        display: none;
+        }
+        @media screen and (max-width: 1000px){
+            /*Menus MOBILE-DESKTOP*/
+            .nav-bar{
+                padding: 1.5rem 4rem;
+            }
+            .nav-item{
+                display: none;
+            }
+            .mobile-menu-icon{
+                display: block;
+            }
+            .mobile-menu-icon button{
+        
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+            .mobile-menu ul{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+            .mobile-menu .nav-item{
+                display: block;
+                padding-top: 1.2rem;
+            }
+            .open {
+                display: block;
+            }
+            .nav-list{
+                display: none;
+            }
+          /*TEXTOS*/
+
+          .container{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+           
+          }
+          .container h1{
+            font-size: 22px;
+          }
+          .container .ClasseImagem img{
+            width: 120%;
+            
+          }
+       
+
+        } 
+
+
+.container {
+            width: auto; /* Define a largura máxima do conteúdo */
+            margin: 0 auto; /* Centraliza o conteúdo na página */
+            text-align: justify; /* Justifica o texto */
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 5%;
+            
+            
+	}
+    .container h1{
+        font-weight: bolder;
+    }
+    .container h3{
+        font-weight: lighter;
+    }
+    .container .ClasseImagem{
+        width: auto;
+
+    }
+
